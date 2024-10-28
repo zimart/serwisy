@@ -1,0 +1,28 @@
+INSERT INTO serwisy2 (
+	ticketid,
+	title,
+	ticket_no,
+	status,
+	parent_id,
+	contact_id,
+	product_id,
+	pssold_id,
+	servicecontractsid,
+	parentid,
+	priority,
+	severity
+)
+VALUES (
+	'{{insert_form.formData.ticketid}}',
+	'{{insert_form.formData.title}}',
+	'{{insert_form.formData.ticket_no}}',
+	'{{insert_form.formData.status}}',
+	'{{insert_form.formData.parent_id}}',
+	'{{insert_form.formData.contact_id}}',
+	'{{insert_form.formData.product_id}}',
+	'{{insert_form.formData.pssold_id}}',
+	'{{insert_form.formData.servicecontractsid}}',
+	'{{insert_form.formData.parentid}}',
+	'{{insert_form.formData.priority}}',
+	'{{insert_form.formData.severity}}'
+);

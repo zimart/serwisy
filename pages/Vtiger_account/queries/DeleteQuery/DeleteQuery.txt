@@ -1,0 +1,2 @@
+DELETE FROM vtiger_account
+  WHERE accountid = {{data_table.triggeredRow.accountid}};

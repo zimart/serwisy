@@ -1,0 +1,13 @@
+UPDATE vtiger_account SET
+		accountname = '{{update_form.fieldState.accountname.isVisible ? update_form.formData.accountname : update_form.sourceData.accountname}}',
+		account_no = '{{update_form.fieldState.account_no.isVisible ? update_form.formData.account_no : update_form.sourceData.account_no}}',
+    parentid = '{{update_form.fieldState.parentid.isVisible ? update_form.formData.parentid : update_form.sourceData.parentid}}',
+		account_type = '{{update_form.fieldState.account_type.isVisible ? update_form.formData.account_type : update_form.sourceData.account_type}}',
+		industry = '{{update_form.fieldState.industry.isVisible ? update_form.formData.industry : update_form.sourceData.industry}}',
+		annualrevenue = '{{update_form.fieldState.annualrevenue.isVisible ? update_form.formData.annualrevenue : update_form.sourceData.annualrevenue}}',
+		siccode = '{{update_form.fieldState.siccode.isVisible ? update_form.formData.siccode : update_form.sourceData.siccode}}',
+		phone = '{{update_form.fieldState.phone.isVisible ? update_form.formData.phone : update_form.sourceData.phone}}',
+		otherphone = '{{update_form.fieldState.otherphone.isVisible ? update_form.formData.otherphone : update_form.sourceData.otherphone}}',
+		email1 = '{{update_form.fieldState.email1.isVisible ? update_form.formData.email1 : update_form.sourceData.email1}}',
+		email2 = '{{update_form.fieldState.email2.isVisible ? update_form.formData.email2 : update_form.sourceData.email2}}'
+  WHERE accountid = {{data_table.selectedRow.accountid}};

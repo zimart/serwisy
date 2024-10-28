@@ -1,0 +1,56 @@
+{
+  "allowZoom": true,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 48,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultMarkers": "{{forward_geocoding.data.data.map((item) => {return {lat: item.latitude, long: item.longitude}})}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultMarkers"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableCreateMarker": true,
+  "enableMapTypeControl": true,
+  "enablePickLocation": true,
+  "enableSearch": true,
+  "flexVerticalAlignment": "start",
+  "isClickedMarkerCentered": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ugz7u0g02a",
+  "leftColumn": 39,
+  "mapCenter": {
+    "lat": 49.5684985,
+    "long": 22.1418811,
+    "title": "Czerteż 208, 38-500 Sanok, Polska"
+  },
+  "minWidth": 450,
+  "mobileBottomRow": 178,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 138,
+  "needsErrorInfo": false,
+  "originalBottomRow": 178,
+  "originalTopRow": 138,
+  "parentColumnSpace": 20.5625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "MAP_WIDGET",
+  "version": 1,
+  "widgetId": "lzx7s7ljlh",
+  "widgetName": "Map2",
+  "zoomLevel": 75
+}

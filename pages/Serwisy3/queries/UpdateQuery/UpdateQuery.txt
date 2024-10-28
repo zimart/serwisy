@@ -1,0 +1,6 @@
+UPDATE serwisy SET
+		Temat = '{{update_form.fieldState.Temat.isVisible ? update_form.formData.Temat : update_form.sourceData.Temat}}',
+		Status = '{{update_form.fieldState.Status.isVisible ? update_form.formData.Status : update_form.sourceData.Status}}',
+    fk_vtiger_account_serwisy = '{{update_form.fieldState.fk_vtiger_account_serwisy.isVisible ? update_form.formData.fk_vtiger_account_serwisy : update_form.sourceData.fk_vtiger_account_serwisy}}',
+		OPIS = '{{update_form.fieldState.OPIS.isVisible ? update_form.formData.OPIS : update_form.sourceData.OPIS}}'
+WHERE id = {{data_table.selectedRow.id}};

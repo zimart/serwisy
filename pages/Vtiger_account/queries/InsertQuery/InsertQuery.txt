@@ -1,0 +1,28 @@
+INSERT INTO vtiger_account (
+	accountid,
+	accountname,
+	account_no,
+	parentid,
+	account_type,
+	industry,
+	annualrevenue,
+	siccode,
+	phone,
+	otherphone,
+	email1,
+	email2
+)
+VALUES (
+	'{{insert_form.formData.accountid}}',
+	'{{insert_form.formData.accountname}}',
+	'{{insert_form.formData.account_no}}',
+	'{{insert_form.formData.parentid}}',
+	'{{insert_form.formData.account_type}}',
+	'{{insert_form.formData.industry}}',
+	'{{insert_form.formData.annualrevenue}}',
+	'{{insert_form.formData.siccode}}',
+	'{{insert_form.formData.phone}}',
+	'{{insert_form.formData.otherphone}}',
+	'{{insert_form.formData.email1}}',
+	'{{insert_form.formData.email2}}'
+);

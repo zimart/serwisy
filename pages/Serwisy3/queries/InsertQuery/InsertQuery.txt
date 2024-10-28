@@ -1,0 +1,10 @@
+INSERT INTO serwisy (
+	Temat,
+	Status,
+	fk_vtiger_account_serwisy,
+	OPIS)
+VALUES (
+	'{{insert_form.formData.Temat}}',
+	'{{insert_form.formData.Status}}',
+	'{{insert_form.formData.fk_vtiger_account_serwisy}}',
+	'{{insert_form.formData.OPIS}}');

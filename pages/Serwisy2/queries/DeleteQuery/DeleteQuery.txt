@@ -1,0 +1,2 @@
+DELETE FROM serwisy2
+  WHERE ticketid = {{data_table.triggeredRow.ticketid}};
