@@ -221,8 +221,7 @@
           "label": "OPIS",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "OPIS",
-          "position": 3,
-          "sourceData": null
+          "position": 3
         },
         "Status": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -287,8 +286,7 @@
           "label": "Fk Vtiger Account Serwisy",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "fk_vtiger_account_serwisy",
-          "position": 2,
-          "sourceData": null
+          "position": 2
         }
       },
       "dataType": "object",
