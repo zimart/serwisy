@@ -43,7 +43,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1730227219226,
+  "columnUpdatedAt": 1730227287504,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -144,9 +144,6 @@
     },
     {
       "key": "tableData"
-    },
-    {
-      "key": "onRowSelected"
     }
   ],
   "dynamicTriggerPathList": [
@@ -161,9 +158,6 @@
     },
     {
       "key": "onSort"
-    },
-    {
-      "key": "onRowSelected"
     }
   ],
   "enableClientSideSearch": true,
@@ -183,7 +177,6 @@
   "labelTextSize": "0.875rem",
   "leftColumn": 1,
   "onPageChange": "{{SelectQuery.run()}}",
-  "onRowSelected": "{{forward_geocoding.run({\"address\": data_table.selectedRow.Temat })}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
   "parentColumnSpace": 16.3125,
@@ -205,7 +198,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "OPIS",
-      "index": 4,
+      "index": 3,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,

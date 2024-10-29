@@ -35,12 +35,12 @@
       "isDefault": false
     },
     {
-      "id": "Serwisy2",
-      "isDefault": false
-    },
-    {
       "id": "Serwisy3",
       "isDefault": true
+    },
+    {
+      "id": "Serwisy32",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {

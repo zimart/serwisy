@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "671fc2aa651cb4263241940d_947ff7a9-faeb-4664-bf2a-4874af070f0a",
-  "id": "Serwisy3_UpdateQuery",
+  "gitSyncId": "672127d296281a038bfa3096_ad314cc8-c8e1-4eb4-a347-60e5c55c0a36",
+  "id": "Serwisy32_UpdateQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -22,14 +22,9 @@
       "name": "panelsi65",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "executeOnLoad": false,
     "name": "UpdateQuery",
-    "pageId": "Serwisy3",
+    "pageId": "Serwisy32",
     "userSetOnLoad": false
   }
 }

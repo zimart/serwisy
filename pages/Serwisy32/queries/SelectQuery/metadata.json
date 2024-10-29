@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "671fc2aa651cb4263241940d_658ee587-1f4a-40a4-9093-b39defa18c0e",
-  "id": "Serwisy2_SelectQuery",
+  "gitSyncId": "672127d296281a038bfa3096_e2c18ae7-6c2b-4647-a827-3fb804aef5bb",
+  "id": "Serwisy32_SelectQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM serwisy2\nWHERE title like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'ticketid'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM serwisy3\nORDER BY {{data_table.sortOrder.column || 'id'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": true,
     "name": "SelectQuery",
-    "pageId": "Serwisy2",
+    "pageId": "Serwisy32",
     "userSetOnLoad": true
   }
 }

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO serwisy (\n\tTemat,\n\tStatus,\n\tfk_vtiger_account_serwisy,\n\tOPIS)\nVALUES (\n\t'{{insert_form.formData.Temat}}',\n\t'{{insert_form.formData.Status}}',\n\t'{{insert_form.formData.fk_vtiger_account_serwisy}}',\n\t'{{insert_form.formData.OPIS}}');",
+      "body": "INSERT INTO serwisy3 (\n\n\tTemat,\n\tStatus,\n\tOPIS,\n\tkodpocztowy,\n\tulica,\n\tmiejscowosc,\n\ttelefon,\n\tadres,\n\tfoto1,\n\tfoto2\n)\nVALUES (\n\n\t'{{insert_form.formData.Temat}}',\n\t'{{insert_form.formData.Status}}',\n\t'{{insert_form.formData.OPIS}}',\n\t'{{insert_form.formData.kodpocztowy}}',\n\t'{{insert_form.formData.ulica}}',\n\t'{{insert_form.formData.miejscowosc}}',\n\t'{{insert_form.formData.telefon}}',\n\t'concat(insert_form.formData.ulica,\" \",insert_form.formData.kodpocztowy)',\n\t'{{insert_form.formData.foto1}}',\n\t'{{insert_form.formData.foto2}}'\n);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,6 +22,11 @@
       "name": "panelsi65",
       "pluginId": "mysql-plugin"
     },
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
     "name": "InsertQuery",
     "pageId": "Serwisy3",

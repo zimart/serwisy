@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "671fc2aa651cb4263241940d_cca27db7-81a7-45ee-be7c-c9e1923217cb",
-  "id": "Serwisy2_DeleteQuery",
+  "gitSyncId": "672127d296281a038bfa3096_575808b0-7877-4bd6-b339-16e5227a1aed",
+  "id": "Serwisy3_zapiszadres",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM serwisy2\n  WHERE ticketid = {{data_table.triggeredRow.ticketid}};",
+      "body": "UPDATE serwisy3 SET\n    adres =  CONCAT(ulica,\" \",kodpocztowy,\" \",miejscowosc);\n    \n  \n\t ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,9 +22,10 @@
       "name": "panelsi65",
       "pluginId": "mysql-plugin"
     },
+    "dynamicBindingPathList": [],
     "executeOnLoad": false,
-    "name": "DeleteQuery",
-    "pageId": "Serwisy2",
+    "name": "zapiszadres",
+    "pageId": "Serwisy3",
     "userSetOnLoad": false
   }
 }

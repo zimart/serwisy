@@ -6,7 +6,6 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
   "bottomRow": 89,
-  "bottomRowBeforeCollapse": 89,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -274,8 +273,6 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 89,
-  "originalTopRow": 52,
   "parentColumnSpace": 16.3125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -302,7 +299,7 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "null",
+          "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.OPIS))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
@@ -315,7 +312,8 @@
           "label": "OPIS",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "OPIS",
-          "position": 3
+          "position": 2,
+          "sourceData": "[value-4]"
         },
         "Status": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -337,7 +335,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Status",
           "position": 1,
-          "sourceData": "Zrealizowane"
+          "sourceData": "[value-3]"
         },
         "Temat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -359,7 +357,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "Temat",
           "position": 0,
-          "sourceData": "nie dziala z mysql"
+          "sourceData": "[value-2]"
         },
         "adres": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -613,8 +611,7 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Update Row id: {{data_table.selectedRow.id}}",
-  "topRow": 52,
-  "topRowBeforeCollapse": 52,
+  "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "6g4ewsx2v0",

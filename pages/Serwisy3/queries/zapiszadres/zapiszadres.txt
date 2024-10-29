@@ -1,0 +1,5 @@
+UPDATE serwisy3 SET
+    adres =  CONCAT(ulica," ",kodpocztowy," ",miejscowosc);
+    
+  
+	 

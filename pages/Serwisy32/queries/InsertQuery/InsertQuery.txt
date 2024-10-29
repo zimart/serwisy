@@ -20,7 +20,7 @@ VALUES (
 	'{{insert_form.formData.ulica}}',
 	'{{insert_form.formData.miejscowosc}}',
 	'{{insert_form.formData.telefon}}',
-	'concat(insert_form.formData.ulica," ",insert_form.formData.kodpocztowy)',
+	'{{insert_form.formData.adres}}',
 	'{{insert_form.formData.foto1}}',
 	'{{insert_form.formData.foto2}}'
 );
