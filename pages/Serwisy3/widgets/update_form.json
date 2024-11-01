@@ -240,6 +240,24 @@
     },
     {
       "key": "schema.__root_schema__.children.foto5.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.latitude.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.latitude.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.latitude.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.longitude.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.longitude.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.longitude.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -514,6 +532,50 @@
           "originalIdentifier": "kodpocztowy",
           "position": 3,
           "sourceData": "[value-5]"
+        },
+        "latitude": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "latitude",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.latitude))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "latitude",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Latitude",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "latitude",
+          "position": 13,
+          "sourceData": null
+        },
+        "longitude": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "longitude",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.longitude))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "longitude",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Longitude",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "longitude",
+          "position": 14,
+          "sourceData": null
         },
         "miejscowosc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
